@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+venv/
+.env
+
+# Data - large files excluded (QUBO matrices can be regenerated)
+*.npz
+
+# Logs
+results/full_experiment.log
+results/final_run.log
+results/extended_run.log
+results/extension_run.log
+
+# LaTeX aux
+*.aux
+*.log
+*.out
+*.toc
+*.bbl
+*.blg
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary scripts
+run_experiment.py
+run_extended.py
+run_final.py
+run_extension.py
+
+# IDE
+.vscode/
+.idea/

@@ -1,0 +1,28 @@
+# Experiment Configuration
+experiment:
+  name: "Quantum-Inspired vs Classical Benchmark"
+  date: "2026-11-07"
+  
+sizes: [20, 30, 50]
+n_instances: 10
+n_seeds: 10
+time_limit: 30.0  # seconds
+
+problems:
+  - random_qubo
+  - maxcut
+  - knapsack
+
+algorithms:
+  - BSB
+  - SimCIM
+  - LQA
+  - SA
+  - CP-SAT
+
+# Reference method per size
+reference:
+  n_le_20: brute_force
+  n_gt_20: CP-SAT_SA_best
+
+success_threshold: 1.0  # <1% gap = success
